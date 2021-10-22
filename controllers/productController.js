@@ -3,8 +3,7 @@ var Product= require('../models/product');
 
 
 //---------------------Create New Product---------------------//
-/* This function is used to create a new product.
-It also updates 2 way referencing in user*/
+/* This function is used to create a new product.*/
 exports.product_create_post = function(req, res) 
 {   
     console.log("hello")

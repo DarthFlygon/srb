@@ -4,8 +4,7 @@ var bcrypt = require('bcrypt');
 
 
 //---------------------Register New User---------------------//
-/* This function is used to register a new user.
-It also updates 2 way referencing in user*/
+/* This function is used to register a new user*/
 exports.user_register_post = function(req, res) 
 {   
     let user = new User(
