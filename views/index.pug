@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to SRB #{title}
+
+  a(class='button' href='/registeruser') Register
+  form(action='/login', method='POST')
+    p
+      | Username: 
+      input(type='text', name='username', value='')
+      | Password:
+      input(type='text', name='password', value='')
+      |          
+    input(type='submit', value='Submit')

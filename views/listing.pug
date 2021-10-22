@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+    p Login Success
+    form(action='/addproduct', method='POST')
+    p
+      | Name: 
+      input(type='text', name='name', value='')
+      | Image:
+      input(type='text', name='image', value='')
+      | Price:      
+      input(type='number', name='price', value='')
+      |   
+    input(type='submit', value='Submit')
